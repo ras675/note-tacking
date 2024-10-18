@@ -1,9 +1,12 @@
 import React, { useState } from 'react'; // Import useState from React
 import SearchBar from './SearchBar/SearchBar';
 import ProfileInfo from './Cards/ProfileInfo';
+import {  useNavigate } from "react-router-dom"
 
 const Navbar = () => {
-  const [searchQuery, setSearchQuery] = useState(""); // Initialize searchQuery state
+  const [searchQuery, setSearchQuery] = useState("");
+   // Initialize searchQuery state
+   const navigate = useNavigate()
 
   const handleSearch = () => {
     // Handle the search logic here
@@ -13,6 +16,10 @@ const Navbar = () => {
   const onClearSearch = () => {
     setSearchQuery(""); // Clear the search input
   };
+
+  const onLogout =() => {
+    navigate("/login")
+  }
 
   return (
     <div className="bg-white flex items-center justify-between px-6 py-2 drop-shadow">
@@ -28,7 +35,7 @@ const Navbar = () => {
         onClearSearch={onClearSearch} // Pass onClearSearch function
       />
 
-      <ProfileInfo />
+      <ProfileInfo onLogout={onLogout} />
     </div>
   );
 };

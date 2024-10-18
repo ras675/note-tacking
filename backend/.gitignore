@@ -1,0 +1,73 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+/dist
+/build
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components/
+
+# dotenv environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Production
+/build
+/dist
+# React Native
+.expo/
+.expo-shared/
+
+# React Native files
+android/
+ios/
+
+# MongoDB
+dump/
+data/
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Testing files
+/coverage
+.nyc_output
+
+# Parcel-bundler cache
+.cache/
+.parcel-cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Miscellaneous
+*.env
+*.log
+*.bak
+*.swp
+
+# Ignore compiled JS files from TypeScript
+*.ts
+*.js.map
